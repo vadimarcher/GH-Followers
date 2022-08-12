@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		D9CAC2F728A2AF3300DC088F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC2F628A2AF3300DC088F /* AppDelegate.swift */; };
 		D9CAC2F928A2AF3300DC088F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC2F828A2AF3300DC088F /* SceneDelegate.swift */; };
-		D9CAC2FB28A2AF3300DC088F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC2FA28A2AF3300DC088F /* ViewController.swift */; };
-		D9CAC2FE28A2AF3300DC088F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CAC2FC28A2AF3300DC088F /* Main.storyboard */; };
 		D9CAC30028A2AF3600DC088F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9CAC2FF28A2AF3600DC088F /* Assets.xcassets */; };
 		D9CAC30328A2AF3600DC088F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9CAC30128A2AF3600DC088F /* LaunchScreen.storyboard */; };
+		D9CAC30B28A42AD200DC088F /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC30A28A42AD200DC088F /* SearchVC.swift */; };
+		D9CAC30D28A42B2400DC088F /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC30C28A42B2400DC088F /* FavoritesListVC.swift */; };
+		D9CAC30F28A68F0E00DC088F /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC30E28A68F0E00DC088F /* GFButton.swift */; };
+		D9CAC31128A692DF00DC088F /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC31028A692DF00DC088F /* GFTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D9CAC2F328A2AF3300DC088F /* GH Followers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GH Followers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9CAC2F628A2AF3300DC088F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D9CAC2F828A2AF3300DC088F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D9CAC2FA28A2AF3300DC088F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D9CAC2FD28A2AF3300DC088F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D9CAC2FF28A2AF3600DC088F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9CAC30228A2AF3600DC088F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9CAC30428A2AF3600DC088F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9CAC30A28A42AD200DC088F /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		D9CAC30C28A42B2400DC088F /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		D9CAC30E28A68F0E00DC088F /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
+		D9CAC31028A692DF00DC088F /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				D9CAC2F628A2AF3300DC088F /* AppDelegate.swift */,
 				D9CAC2F828A2AF3300DC088F /* SceneDelegate.swift */,
-				D9CAC2FA28A2AF3300DC088F /* ViewController.swift */,
-				D9CAC2FC28A2AF3300DC088F /* Main.storyboard */,
 				D9CAC2FF28A2AF3600DC088F /* Assets.xcassets */,
 				D9CAC30128A2AF3600DC088F /* LaunchScreen.storyboard */,
 				D9CAC30428A2AF3600DC088F /* Info.plist */,
+				D9CAC30A28A42AD200DC088F /* SearchVC.swift */,
+				D9CAC30C28A42B2400DC088F /* FavoritesListVC.swift */,
+				D9CAC30E28A68F0E00DC088F /* GFButton.swift */,
+				D9CAC31028A692DF00DC088F /* GFTextField.swift */,
 			);
 			path = "GH Followers";
 			sourceTree = "<group>";
@@ -127,7 +133,6 @@
 			files = (
 				D9CAC30328A2AF3600DC088F /* LaunchScreen.storyboard in Resources */,
 				D9CAC30028A2AF3600DC088F /* Assets.xcassets in Resources */,
-				D9CAC2FE28A2AF3300DC088F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +143,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9CAC2FB28A2AF3300DC088F /* ViewController.swift in Sources */,
+				D9CAC31128A692DF00DC088F /* GFTextField.swift in Sources */,
+				D9CAC30D28A42B2400DC088F /* FavoritesListVC.swift in Sources */,
+				D9CAC30F28A68F0E00DC088F /* GFButton.swift in Sources */,
+				D9CAC30B28A42AD200DC088F /* SearchVC.swift in Sources */,
 				D9CAC2F728A2AF3300DC088F /* AppDelegate.swift in Sources */,
 				D9CAC2F928A2AF3300DC088F /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D9CAC2FC28A2AF3300DC088F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D9CAC2FD28A2AF3300DC088F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D9CAC30128A2AF3600DC088F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +292,7 @@
 				INFOPLIST_FILE = "GH Followers/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -304,7 +304,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,7 +320,7 @@
 				INFOPLIST_FILE = "GH Followers/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -332,7 +332,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
