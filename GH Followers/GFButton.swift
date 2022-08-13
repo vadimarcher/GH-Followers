@@ -25,6 +25,8 @@ class GFButton: UIButton {
         self.setTitle(title, for: .normal)
         configure()
     }
+    
+    
     private func configure() {
         layer.cornerRadius      = 10
         titleLabel?.textColor   = .white
