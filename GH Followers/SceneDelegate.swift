@@ -20,6 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         window?.rootViewController = createTabbar()
         window?.makeKeyAndVisible()
+        
+        configureNavigationBar()
     }
 
     func createSearcNC() -> UINavigationController {
@@ -29,6 +31,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         return UINavigationController(rootViewController: searchVC)
     }
+    
     func createFavoritesNC() -> UINavigationController {
         let favoritesListVC = FavoritesListVC()
         favoritesListVC.title = "Favorites"
@@ -38,10 +41,16 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func createTabbar() -> UITabBarController {
-        let tabbar = UITabBarController()
+        let tabbar                      = UITabBarController()
         UITabBar.appearance().tintColor = .systemGreen
-        tabbar.viewControllers = [createSearcNC(), createFavoritesNC()]
+        tabbar.viewControllers          = [createSearcNC(), createFavoritesNC()]
+        
         return tabbar
+    }
+    
+    func configureNavigationBar() {
+        UINavigationBar.appearance().tintColor = .systemGreen
+    
     }
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
