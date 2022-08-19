@@ -20,6 +20,9 @@
 		D9CAC31728AA1F0600DC088F /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC31628AA1F0600DC088F /* GFBodyLabel.swift */; };
 		D9CAC31928AA1FDF00DC088F /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC31828AA1FDF00DC088F /* GFAlertVC.swift */; };
 		D9CAC31B28AB6F2700DC088F /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC31A28AB6F2700DC088F /* UIViewController+Ext.swift */; };
+		D9CAC32228AD4DFC00DC088F /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC32128AD4DFC00DC088F /* Follower.swift */; };
+		D9CAC32428AE0C5500DC088F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC32328AE0C5500DC088F /* User.swift */; };
+		D9CAC32728AE127700DC088F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CAC32628AE127700DC088F /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		D9CAC31628AA1F0600DC088F /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
 		D9CAC31828AA1FDF00DC088F /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
 		D9CAC31A28AB6F2700DC088F /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		D9CAC32128AD4DFC00DC088F /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		D9CAC32328AE0C5500DC088F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D9CAC32628AE127700DC088F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +76,13 @@
 		D9CAC2F528A2AF3300DC088F /* GH Followers */ = {
 			isa = PBXGroup;
 			children = (
+				D9CAC32528AE126100DC088F /* Managers */,
+				D9CAC32028AD4DE500DC088F /* Model */,
 				D9CAC31F28AD488900DC088F /* Support */,
 				D9CAC31E28AD481B00DC088F /* Extentions */,
 				D9CAC31D28AD47EA00DC088F /* CustomViews */,
 				D9CAC31C28AD479100DC088F /* Screens */,
+				D9CAC30428A2AF3600DC088F /* Info.plist */,
 			);
 			path = "GH Followers";
 			sourceTree = "<group>";
@@ -115,9 +124,25 @@
 				D9CAC2F828A2AF3300DC088F /* SceneDelegate.swift */,
 				D9CAC2FF28A2AF3600DC088F /* Assets.xcassets */,
 				D9CAC30128A2AF3600DC088F /* LaunchScreen.storyboard */,
-				D9CAC30428A2AF3600DC088F /* Info.plist */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		D9CAC32028AD4DE500DC088F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D9CAC32128AD4DFC00DC088F /* Follower.swift */,
+				D9CAC32328AE0C5500DC088F /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D9CAC32528AE126100DC088F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D9CAC32628AE127700DC088F /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9CAC32428AE0C5500DC088F /* User.swift in Sources */,
 				D9CAC31728AA1F0600DC088F /* GFBodyLabel.swift in Sources */,
 				D9CAC31928AA1FDF00DC088F /* GFAlertVC.swift in Sources */,
 				D9CAC31128A692DF00DC088F /* GFTextField.swift in Sources */,
@@ -197,7 +223,9 @@
 				D9CAC30D28A42B2400DC088F /* FavoritesListVC.swift in Sources */,
 				D9CAC30F28A68F0E00DC088F /* GFButton.swift in Sources */,
 				D9CAC30B28A42AD200DC088F /* SearchVC.swift in Sources */,
+				D9CAC32228AD4DFC00DC088F /* Follower.swift in Sources */,
 				D9CAC31528AA1AE200DC088F /* GFTitleLabel.swift in Sources */,
+				D9CAC32728AE127700DC088F /* NetworkManager.swift in Sources */,
 				D9CAC31328A838BF00DC088F /* FollowerListVC.swift in Sources */,
 				D9CAC2F728A2AF3300DC088F /* AppDelegate.swift in Sources */,
 				D9CAC2F928A2AF3300DC088F /* SceneDelegate.swift in Sources */,
